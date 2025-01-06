@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_567a6bce29fe61a244cad4c1fda51f89 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_567a6bce29fe61a244cad4c1fda51f89" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_567a6bce29fe61a244cad4c1fda51f89 = L.map(
+                "map_567a6bce29fe61a244cad4c1fda51f89",
+                {
+                    center: [46.2374, 1.4886],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_38941cb5d96212ffbe8bd42e00bdcae0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_567a6bce29fe61a244cad4c1fda51f89);
+        
+    
+            var circle_fa3a4f6ac3e231f226cd6388cc40ec77 = L.circle(
+                [46.2374, 1.4886],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
+            ).addTo(map_567a6bce29fe61a244cad4c1fda51f89);
+        
+    
+        var popup_700fd16574fdec971a9153c71c9e0411 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_685815249cc35d7204db4c8b64e2528f = $(`<div id="html_685815249cc35d7204db4c8b64e2528f" style="width: 100.0%; height: 100.0%;">Zone primaire (5-10 min)</div>`)[0];
+            popup_700fd16574fdec971a9153c71c9e0411.setContent(html_685815249cc35d7204db4c8b64e2528f);
+        
+
+        circle_fa3a4f6ac3e231f226cd6388cc40ec77.bindPopup(popup_700fd16574fdec971a9153c71c9e0411)
+        ;
+
+        
+    
+    
+            var circle_24731bcf9f71a7122645f00c1ac21639 = L.circle(
+                [46.2374, 1.4886],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_567a6bce29fe61a244cad4c1fda51f89);
+        
+    
+        var popup_1493eadf592bdd604e77c19406d68759 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e844653b841f2b257e0bb86d84b04cea = $(`<div id="html_e844653b841f2b257e0bb86d84b04cea" style="width: 100.0%; height: 100.0%;">Zone secondaire (15-20 min)</div>`)[0];
+            popup_1493eadf592bdd604e77c19406d68759.setContent(html_e844653b841f2b257e0bb86d84b04cea);
+        
+
+        circle_24731bcf9f71a7122645f00c1ac21639.bindPopup(popup_1493eadf592bdd604e77c19406d68759)
+        ;
+
+        
+    
+    
+            var circle_b1c5091f0d055de46059a5bd95f9d17b = L.circle(
+                [46.2374, 1.4886],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_567a6bce29fe61a244cad4c1fda51f89);
+        
+    
+        var popup_9e07fa4d34d64e413ecb82ac5c0134e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec7f6abfb7e798a9ff329cd170df2d8d = $(`<div id="html_ec7f6abfb7e798a9ff329cd170df2d8d" style="width: 100.0%; height: 100.0%;">Zone tertiaire (30-40 min)</div>`)[0];
+            popup_9e07fa4d34d64e413ecb82ac5c0134e9.setContent(html_ec7f6abfb7e798a9ff329cd170df2d8d);
+        
+
+        circle_b1c5091f0d055de46059a5bd95f9d17b.bindPopup(popup_9e07fa4d34d64e413ecb82ac5c0134e9)
+        ;
+
+        
+    
+    
+            var marker_411b23f19bdcb890876bca40a294ff38 = L.marker(
+                [46.2374, 1.4886],
+                {}
+            ).addTo(map_567a6bce29fe61a244cad4c1fda51f89);
+        
+    
+            var icon_29a5eaf4be67cd78c7e7782f20febb9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_411b23f19bdcb890876bca40a294ff38.setIcon(icon_29a5eaf4be67cd78c7e7782f20febb9b);
+        
+    
+        var popup_0ef35c2eacb5377f674fb72b08341736 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_682b76802528d89e1d4dfe1aaa91a757 = $(`<div id="html_682b76802528d89e1d4dfe1aaa91a757" style="width: 100.0%; height: 100.0%;">La Souterraine (Centre-ville)</div>`)[0];
+            popup_0ef35c2eacb5377f674fb72b08341736.setContent(html_682b76802528d89e1d4dfe1aaa91a757);
+        
+
+        marker_411b23f19bdcb890876bca40a294ff38.bindPopup(popup_0ef35c2eacb5377f674fb72b08341736)
+        ;
+
+        
+    
+</script>
+</html>
